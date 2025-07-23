@@ -17,6 +17,10 @@
 #      [Plug-in Repository Root]/plug-ins/PluginName/UNITY_PROJECT_FOLDER_NAME/Assets/NATIVE_LIBRARY_ROOT_FOLDER_NAME/NativeLibraries~/$CONFIGURATION/$PLATFORM/LibraryName.suffix
 #
 
+# Calling build.py from TeamCity causes this script to run in the wrong location
+# Ensure this script runs in the project directory
+cd $PROJECT_DIR
+
 printf "Copying built libraries to Unity plug-in folder hierarchy for $TARGET_NAME"
 
 # Determine target platform based upon current SDK
