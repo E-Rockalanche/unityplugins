@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using NUnit.Framework;
 
 using Apple.Core.Runtime;
@@ -15,3 +16,4 @@ public class TestTime
         Assert.Less(Math.Abs((networkTime - localTime).TotalSeconds), 60.0);
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

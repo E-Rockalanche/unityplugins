@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿namespace Apple.CoreHaptics
 {
     public enum CHHapticEventParameterID
@@ -15,3 +16,4 @@
         AudioBrightness = 9
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

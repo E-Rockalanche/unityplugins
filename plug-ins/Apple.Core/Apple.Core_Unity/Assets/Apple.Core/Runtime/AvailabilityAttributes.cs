@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -146,3 +147,4 @@ namespace Apple.Core
         }
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

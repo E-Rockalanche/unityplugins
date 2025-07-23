@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using NUnit.Framework;
 
 using Apple.Core.Runtime;
@@ -254,3 +255,4 @@ public class TestNSArray
         Assert.AreEqual(nsArray2[1], "two");
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

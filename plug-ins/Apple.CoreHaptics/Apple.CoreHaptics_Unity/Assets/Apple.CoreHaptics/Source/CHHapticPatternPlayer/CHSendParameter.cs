@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using System.Runtime.InteropServices;
 
 namespace Apple.CoreHaptics
@@ -17,3 +18,4 @@ namespace Apple.CoreHaptics
         }
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -236,3 +237,4 @@ namespace Apple.Core.Runtime
         public static extern string NSDictionary_ToJson(IntPtr nsDictionaryPtr, NSErrorCallback onError, NSExceptionCallback onException);
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

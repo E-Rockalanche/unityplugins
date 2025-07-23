@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using NUnit.Framework;
 
 using Apple.Core.Runtime;
@@ -19,3 +20,4 @@ public class TestNSObject
         Assert.IsFalse(string1.Equals(null));
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

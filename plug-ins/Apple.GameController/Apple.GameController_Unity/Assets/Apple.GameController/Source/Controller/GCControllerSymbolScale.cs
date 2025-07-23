@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿namespace Apple.GameController.Controller
 {
     public enum GCControllerSymbolScale : int
@@ -7,3 +8,4 @@
         Large = 3
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

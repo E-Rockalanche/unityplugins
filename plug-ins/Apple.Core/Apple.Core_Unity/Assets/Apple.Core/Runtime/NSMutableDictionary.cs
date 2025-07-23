@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -130,3 +131,4 @@ namespace Apple.Core.Runtime
         public static extern void NSMutableDictionary_RemoveAllObjects(IntPtr nsMutableDictionaryPtr, NSExceptionCallback onException);
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using System;
 using System.Runtime.InteropServices;
 using static Apple.CoreHaptics.CHInteropUtility;
@@ -51,3 +52,4 @@ namespace Apple.UIFBG
 		#endregion
 	}
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

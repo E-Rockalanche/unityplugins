@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using NUnit.Framework;
 
 using Apple.Core.Runtime;
@@ -26,3 +27,4 @@ public class TestNSData
         Assert.AreEqual(testBytes, testData2.Bytes);
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

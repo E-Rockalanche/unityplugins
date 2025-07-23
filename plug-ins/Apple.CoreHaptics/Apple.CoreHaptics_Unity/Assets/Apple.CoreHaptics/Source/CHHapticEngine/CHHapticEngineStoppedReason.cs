@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 namespace Apple.CoreHaptics
 {
     public enum CHHapticEngineStoppedReason
@@ -11,3 +12,4 @@ namespace Apple.CoreHaptics
         GameControllerDisconnect = 6
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

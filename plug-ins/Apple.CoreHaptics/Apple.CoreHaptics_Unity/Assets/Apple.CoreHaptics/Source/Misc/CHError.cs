@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿using System.Runtime.InteropServices;
 
 namespace Apple.CoreHaptics
@@ -9,3 +10,4 @@ namespace Apple.CoreHaptics
         public readonly string LocalizedDescription;
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

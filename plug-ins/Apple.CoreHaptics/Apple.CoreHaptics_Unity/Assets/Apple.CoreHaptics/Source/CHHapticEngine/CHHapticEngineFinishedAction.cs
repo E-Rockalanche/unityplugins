@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 namespace Apple.CoreHaptics
 {
     public enum CHHapticEngineFinishedAction
@@ -6,3 +7,4 @@ namespace Apple.CoreHaptics
         LeaveEngineRunning = 2
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

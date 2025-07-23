@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 namespace Apple.GameController.Controller
 {
     public enum GCBatteryState : int
@@ -8,3 +9,4 @@ namespace Apple.GameController.Controller
         Full
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

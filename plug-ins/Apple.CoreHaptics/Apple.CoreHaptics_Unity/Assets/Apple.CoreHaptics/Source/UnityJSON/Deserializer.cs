@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿using Apple.SimpleJSON;
 using System;
 using System.Collections;
@@ -1447,3 +1448,4 @@ namespace Apple.UnityJSON
 		}
 	}
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

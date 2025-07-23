@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿using Apple.Core.Tests;
 using NUnit.Framework.Interfaces;
 using UnityEngine.TestRunner;
@@ -12,3 +13,4 @@ public class PHASETestRunner : AppleTestRunner
         base.RunFinished(testResults);
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

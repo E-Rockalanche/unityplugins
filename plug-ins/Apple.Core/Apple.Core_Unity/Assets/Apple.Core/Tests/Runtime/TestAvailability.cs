@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using NUnit.Framework;
 
 using Apple.Core;
@@ -373,3 +374,4 @@ public class TestAvailability
         Assert.IsFalse(Availability.IsEventAvailable<TestClass4>(nameof(TestClass4.TestEvent2), iOS_1_5));
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

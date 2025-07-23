@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using NUnit.Framework.Interfaces;
 using UnityEngine;
 using UnityEngine.TestRunner;
@@ -32,3 +33,4 @@ namespace Apple.Core.Tests
         }
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

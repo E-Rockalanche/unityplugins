@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 namespace Apple.CoreHaptics
 {
 	internal class CHHapticPlayerConfiguration
@@ -12,3 +13,4 @@ namespace Apple.CoreHaptics
 		}
 	}
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

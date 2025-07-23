@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using Apple.Core;
 
 namespace Apple.GameKit.Multiplayer
@@ -24,3 +25,4 @@ namespace Apple.GameKit.Multiplayer
         InviteOnly = 3
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

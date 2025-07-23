@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -168,3 +169,4 @@ namespace Apple.Core.Runtime
         public static extern void NSMutableArray_RemoveNSObject(IntPtr nsMutableArrayPtr, IntPtr nsObjectPtr, NSExceptionCallback onException);
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

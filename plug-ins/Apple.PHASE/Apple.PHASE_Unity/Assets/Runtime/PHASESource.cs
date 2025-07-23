@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿using AOT;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
@@ -521,3 +522,4 @@ namespace Apple.PHASE
 #endif
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

@@ -1,3 +1,4 @@
+#if (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -143,3 +144,4 @@ namespace Apple.Core.Runtime
         public int Count => _map.Count;
     }
 }
+#endif // (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
